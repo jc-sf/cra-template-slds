@@ -1,0 +1,47 @@
+{
+  "name": "cra-template-slds",
+  "version": "0.1.0",
+  "repository": "https://github.com/jc-sf/cra-template-slds.git",
+  "scripts": {
+    "prettify": "prettier --write './template/src/**/*.js'",
+    "lint": "eslint './template/src/**/*.js'"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "slds",
+    "react-slds"
+  ],
+  "description": "The official SLDS template for Create React App.",
+  "main": "template.json",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
