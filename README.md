@@ -1,6 +1,6 @@
 # cra-template-redux
 
-The official SLDS template for [Create React App](https://github.com/facebook/create-react-app)
+The SLDS template for [Create React App](https://github.com/facebook/create-react-app)
 
 ## Usage
 
