@@ -1,6 +1,6 @@
 {
   "name": "cra-template-slds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/jc-sf/cra-template-slds.git",
   "scripts": {
     "prettify": "prettier --write './template/src/**/*.js'",
@@ -13,7 +13,7 @@
     "slds",
     "react-slds"
   ],
-  "description": "The official SLDS template for Create React App.",
+  "description": "The SLDS template for Create React App.",
   "main": "template.json",
   "license": "MIT",
   "engines": {
