@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button } from '@salesforce/design-system-react';
 
-import GlobalHeader from './components';
+import Header from './components/Header';
 import './App.scss';
 
 const App = () => {
   return (
     <div className="App">
-      <GlobalHeader userName="My Username" />
+      <Header userName="My Username" />
       <div className="slds-m-top_xx-large slds-p-top_xx-large">
         <div className="slds-x-small-buttons_horizontal slds-align_absolute-center">
           <Button label="Base" variant="base" />

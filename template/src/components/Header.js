@@ -13,7 +13,7 @@ import {
   MenuDropdown,
 } from '@salesforce/design-system-react';
 
-const GlobalHeader = ({ userName }) => {
+const Header = ({ userName }) => {
   return (
     <GlobalHeader logoSrc="/assets/images/global-header/logo.svg">
       <GlobalHeaderSearch
@@ -61,8 +61,8 @@ const GlobalHeader = ({ userName }) => {
   );
 };
 
-GlobalHeader.propTypes = {
+Header.propTypes = {
   userName: PropTypes.string.isRequired,
 };
 
-export default GlobalHeader;
+export default Header;
