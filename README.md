@@ -1,4 +1,4 @@
-# cra-template-redux
+# cra-template-slds
 
 The SLDS template for [Create React App](https://github.com/facebook/create-react-app)
 
