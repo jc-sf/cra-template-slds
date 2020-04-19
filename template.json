@@ -2,12 +2,7 @@
   "package": {
     "dependencies": {
       "@salesforce-ux/design-system": "latest",
-      "@salesforce/design-system-react": "latest",
-      "node-sass": "latest",
-      "eslint-config-prettier": "latest",
-      "eslint-plugin-prettier": "latest",
-      "prettier": "latest",
-      "shelljs": "latest"
+      "@salesforce/design-system-react": "latest"
     },
     "scripts": {
       "setup-slds": "node ./src/setupSLDS.js"
@@ -32,6 +27,17 @@
       "trailingComma": "es5",
       "singleQuote": true,
       "printWidth": 120
+    },
+    "devDependencies": {
+      "@testing-library/jest-dom": "latest",
+      "@testing-library/react": "latest",
+      "@testing-library/user-event": "latest",
+      "node-sass": "latest",
+      "eslint-config-prettier": "latest",
+      "eslint-plugin-prettier": "latest",
+      "prettier": "latest",
+      "shelljs": "latest",
+      "jest-canvas-mock": "latest"
     }
   }
 }
