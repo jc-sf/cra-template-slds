@@ -12,7 +12,9 @@
       "prettier": "latest",
       "shelljs": "latest",
       "jest-canvas-mock": "latest",
-      "serve": "latest"
+      "serve": "latest",
+      "husky": "latest",
+      "lint-staged": "latest"
     },
     "scripts": {
       "setup-slds": "node ./src/setupSLDS.js",
