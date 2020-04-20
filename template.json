@@ -16,7 +16,8 @@
     },
     "scripts": {
       "setup-slds": "node ./src/setupSLDS.js",
-      "serve": "serve -s build"
+      "serve": "serve -s build",
+      "clean": "rm -rf ./node_modules"
     },
     "eslintConfig": {
       "extends": ["react-app", "plugin:prettier/recommended"],

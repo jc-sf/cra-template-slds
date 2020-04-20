@@ -33,7 +33,7 @@ const Header = ({ userName }) => {
           <Popover
             ariaLabelledby="help-heading"
             body={
-              <div>
+              <div data-testid="helper-heading">
                 <h2 className="slds-text-heading_small" id="help-heading">
                   Help and Training
                 </h2>
