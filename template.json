@@ -2,10 +2,21 @@
   "package": {
     "dependencies": {
       "@salesforce-ux/design-system": "latest",
-      "@salesforce/design-system-react": "latest"
+      "@salesforce/design-system-react": "latest",
+      "@testing-library/jest-dom": "latest",
+      "@testing-library/react": "latest",
+      "@testing-library/user-event": "latest",
+      "node-sass": "latest",
+      "eslint-config-prettier": "latest",
+      "eslint-plugin-prettier": "latest",
+      "prettier": "latest",
+      "shelljs": "latest",
+      "jest-canvas-mock": "latest",
+      "serve": "latest"
     },
     "scripts": {
-      "setup-slds": "node ./src/setupSLDS.js"
+      "setup-slds": "node ./src/setupSLDS.js",
+      "serve": "serve -s build"
     },
     "eslintConfig": {
       "extends": ["react-app", "plugin:prettier/recommended"],
@@ -27,17 +38,6 @@
       "trailingComma": "es5",
       "singleQuote": true,
       "printWidth": 120
-    },
-    "devDependencies": {
-      "@testing-library/jest-dom": "latest",
-      "@testing-library/react": "latest",
-      "@testing-library/user-event": "latest",
-      "node-sass": "latest",
-      "eslint-config-prettier": "latest",
-      "eslint-plugin-prettier": "latest",
-      "prettier": "latest",
-      "shelljs": "latest",
-      "jest-canvas-mock": "latest"
     }
   }
 }
