@@ -23,6 +23,7 @@
     },
     "eslintConfig": {
       "extends": ["react-app", "plugin:prettier/recommended"],
+      "ignorePatterns": "**/serviceWorker.js",
       "rules": {
         "no-unused-vars": "error"
       }
