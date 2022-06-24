@@ -1,8 +1,8 @@
-import React from 'react';
-import { Button } from '@salesforce/design-system-react';
+import React from "react";
+import { Button } from "@salesforce/design-system-react";
 
-import Header from './components/Header';
-import './App.scss';
+import Header from "../components/Header";
+import "./App.scss";
 
 const App = () => {
   return (
@@ -12,7 +12,12 @@ const App = () => {
         <div className="slds-x-small-buttons_horizontal slds-align_absolute-center">
           <Button label="Brand" variant="brand" />
           <Button label="Disabled" variant="brand" disabled />
-          <Button iconCategory="utility" iconName="download" iconPosition="left" label="Neutral Icon" />
+          <Button
+            iconCategory="utility"
+            iconName="download"
+            iconPosition="left"
+            label="Neutral Icon"
+          />
           <Button label="Destructive" variant="destructive" />
           <Button label="Outline Brand" variant="outline-brand" />
         </div>

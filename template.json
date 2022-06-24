@@ -1,47 +1,83 @@
 {
   "package": {
     "dependencies": {
-      "@salesforce-ux/design-system": "latest",
-      "@salesforce/design-system-react": "latest",
-      "@testing-library/jest-dom": "latest",
-      "@testing-library/react": "latest",
-      "@testing-library/user-event": "latest",
-      "node-sass": "4.14.1",
-      "eslint-config-prettier": "latest",
-      "eslint-plugin-prettier": "latest",
-      "prettier": "latest",
-      "shelljs": "latest",
-      "jest-canvas-mock": "latest",
-      "serve": "latest",
-      "husky": "latest",
-      "lint-staged": "latest"
+      "@salesforce-ux/design-system": "^2.15.8",
+      "@salesforce/design-system-react": "^0.10.34",
+      "@testing-library/jest-dom": "^5.11.9",
+      "@testing-library/react": "^11.2.5",
+      "@testing-library/react-hooks": "^7.0.0",
+      "@testing-library/user-event": "^12.7.1",
+      "sass": "^1.37.5",
+      "jest-canvas-mock": "^2.3.1",
+      "mockdate": "^3.0.5",
+      "serve": "^12.0.0",
+      "shortid": "^2.2.16",
+      "eslint-config-prettier": "^8.1.0",
+      "eslint-plugin-prettier": "^3.3.1",
+      "eslint-plugin-cypress": "^2.11.3",
+      "prettier": "^2.2.1",
+      "stylelint": "^13.12.0",
+      "stylelint-config-standard": "^21.0.0",
+      "webpack-bundle-analyzer": "^4.4.2"
     },
     "scripts": {
-      "setup-slds": "node ./src/setupSLDS.js",
+      "setup-slds": "./scripts/setup-slds.sh",
+      "clean": "rm -rf ./node_modules",
+      "lint": "eslint 'src/**/*.js' && stylelint 'src/**/*.scss' && yarn prettier --check .",
+      "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+      "analyze": "yarn build --stats && webpack-bundle-analyzer build/bundle-stats.json",
       "serve": "serve -s build",
-      "clean": "rm -rf ./node_modules"
+      "test": "TZ=UTC react-scripts test --watchAll=false --coverage"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
     },
     "eslintConfig": {
-      "extends": ["react-app", "plugin:prettier/recommended"],
+      "extends": [
+        "react-app",
+        "plugin:prettier/recommended"
+      ],
+      "plugins": [
+        "prettier"
+      ],
       "ignorePatterns": "**/serviceWorker.js",
       "rules": {
-        "no-unused-vars": "error"
+        "no-unused-vars": "error",
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
+          }
+        ]
       }
     },
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
+    "jest": {
+      "resetMocks": false,
+      "coveragePathIgnorePatterns": [
+        "serviceWorker.js",
+        "./src/index.js",
+        "./src/test-utils/*"
+      ],
+      "coverageThreshold": {
+        "global": {
+          "statements": 100,
+          "branches": 100,
+          "functions": 100,
+          "lines": 100
+        }
       }
-    },
-    "lint-staged": {
-      "src/**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
-      "src/**/*.{scss,json,md,yaml,yml,html}": "prettier --write",
-      "package.json": "prettier --write"
-    },
-    "prettier": {
-      "trailingComma": "es5",
-      "singleQuote": true,
-      "printWidth": 120
     }
   }
 }

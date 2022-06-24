@@ -1,3 +1,5 @@
+## My Project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with SLDS template.
 
 ## Available Scripts
@@ -6,7 +8,7 @@ In the project directory, you can run:
 
 ### `yarn setup-slds`
 
-Execute `setupSLDS.js`to setup all necessary SLDS assets and configuration, including<br />
+Execute `./scripts/setup-slds.sh` to setup all necessary SLDS assets and configuration, including<br />
 
 - Salesforce Lightning CSS
 - Salesforce Lightning Fonts
@@ -18,7 +20,7 @@ Execute `setupSLDS.js`to setup all necessary SLDS assets and configuration, incl
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
+The page will reload if you make edits to the codebase.<br />
 You will also see any lint errors in the console.
 
 ### `yarn test`
@@ -28,7 +30,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
+Builds the app for production to the `./build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br />
