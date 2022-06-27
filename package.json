@@ -41,13 +41,18 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-config-prettier": "^8.1.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true,
-    "printWidth": 120
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ]
   }
 }

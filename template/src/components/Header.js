@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 import {
   GlobalHeader,
@@ -10,8 +10,8 @@ import {
   GlobalHeaderSetup,
   GlobalHeaderProfile,
   GlobalHeaderNotifications,
-  MenuDropdown,
-} from '@salesforce/design-system-react';
+  MenuDropdown
+} from "@salesforce/design-system-react";
 
 const Header = ({ userName }) => {
   return (
@@ -19,11 +19,11 @@ const Header = ({ userName }) => {
       <GlobalHeaderSearch
         combobox={
           <Combobox
-            assistiveText={{ label: 'Search' }}
-            labels={{ placeholder: 'Search' }}
+            assistiveText={{ label: "Search" }}
+            labels={{ placeholder: "Search" }}
             options={[
-              { id: 'item1', label: 'item1' },
-              { id: 'item2', label: 'item2' },
+              { id: "item1", label: "item1" },
+              { id: "item2", label: "item2" }
             ]}
           />
         }
@@ -46,15 +46,17 @@ const Header = ({ userName }) => {
         dropdown={
           <MenuDropdown
             options={[
-              { id: 'setupOptionOne', label: 'Setup Option One' },
-              { id: 'setupOptionTwo', label: 'Setup Option Two' },
+              { id: "setupOptionOne", label: "Setup Option One" },
+              { id: "setupOptionTwo", label: "Setup Option Two" }
             ]}
           />
         }
       />
       <GlobalHeaderNotifications
         notificationCount={5}
-        popover={<Popover ariaLabelledby="header-notifications-custom-popover-content" />}
+        popover={
+          <Popover ariaLabelledby="header-notifications-custom-popover-content" />
+        }
       />
       <GlobalHeaderProfile popover={<Popover />} userName={userName} />
     </GlobalHeader>
@@ -62,7 +64,7 @@ const Header = ({ userName }) => {
 };
 
 Header.propTypes = {
-  userName: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired
 };
 
 export default Header;
