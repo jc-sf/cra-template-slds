@@ -24,8 +24,8 @@ global.document.createRange = () => ({
   setEnd: () => {},
   commonAncestorContainer: {
     nodeName: "BODY",
-    ownerDocument: document
-  }
+    ownerDocument: document,
+  },
 });
 
 // Mock the shortid library which SLDS React uses to generate and put IDs on their elements

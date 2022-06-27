@@ -30,11 +30,7 @@
       "test": "TZ=UTC react-scripts test --watchAll=false --coverage"
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
+      "production": [">0.2%", "not dead", "not op_mini all"],
       "development": [
         "last 1 chrome version",
         "last 1 firefox version",
@@ -42,26 +38,21 @@
       ]
     },
     "eslintConfig": {
-      "extends": [
-        "react-app",
-        "plugin:prettier/recommended"
-      ],
-      "plugins": [
-        "prettier"
-      ],
+      "extends": ["react-app", "plugin:prettier/recommended"],
+      "plugins": ["prettier"],
       "ignorePatterns": "**/serviceWorker.js",
       "rules": {
         "no-unused-vars": "error",
         "no-console": [
           "error",
           {
-            "allow": [
-              "warn",
-              "error"
-            ]
+            "allow": ["warn", "error"]
           }
         ]
       }
+    },
+    "prettier": {
+      "trailingComma": "es5"
     },
     "jest": {
       "resetMocks": false,

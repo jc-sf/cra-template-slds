@@ -10,7 +10,7 @@ import {
   GlobalHeaderSetup,
   GlobalHeaderProfile,
   GlobalHeaderNotifications,
-  MenuDropdown
+  MenuDropdown,
 } from "@salesforce/design-system-react";
 
 const Header = ({ userName }) => {
@@ -23,7 +23,7 @@ const Header = ({ userName }) => {
             labels={{ placeholder: "Search" }}
             options={[
               { id: "item1", label: "item1" },
-              { id: "item2", label: "item2" }
+              { id: "item2", label: "item2" },
             ]}
           />
         }
@@ -47,7 +47,7 @@ const Header = ({ userName }) => {
           <MenuDropdown
             options={[
               { id: "setupOptionOne", label: "Setup Option One" },
-              { id: "setupOptionTwo", label: "Setup Option Two" }
+              { id: "setupOptionTwo", label: "Setup Option Two" },
             ]}
           />
         }
@@ -64,7 +64,7 @@ const Header = ({ userName }) => {
 };
 
 Header.propTypes = {
-  userName: PropTypes.string.isRequired
+  userName: PropTypes.string.isRequired,
 };
 
 export default Header;

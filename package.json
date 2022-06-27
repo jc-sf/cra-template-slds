@@ -51,8 +51,21 @@
       "react-app",
       "plugin:prettier/recommended"
     ],
-    "plugins": [
-      "prettier"
-    ]
+    "ignorePatterns": "**/serviceWorker.js",
+    "rules": {
+      "no-unused-vars": "error",
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5"
   }
 }
