@@ -4,7 +4,7 @@ This is a [Create React App template](https://github.com/facebook/create-react-a
 
 ## Features
 
-- [x] Cleaner imports by using absolute imports ([doc](docs/features/AbsoluteImports.md))
+- Cleaner imports by using absolute imports ([doc](docs/features/AbsoluteImports.md))
 
 ## Requirements
 
@@ -19,6 +19,10 @@ To use this template, follow the steps below:
    ```sh
    nvm use v16
    yarn create react-app my-app --template=slds
+   ```
+   or
+   ```
+   npx create-react-app my-app --template=slds
    ```
 
 2. Setup SLDS:
